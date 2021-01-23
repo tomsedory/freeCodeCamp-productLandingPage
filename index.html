@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bimini Travel</title>
+    
+    <style>
+        #nav-bar {
+            overflow: hidden;
+            background-color:black;
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 100%; /* Full width */
+        }
+        /* Links inside the navbar */
+        #nav-bar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        /* Main content */
+        #main {
+            margin-top: 60px; /* Add a top margin to avoid content overlay */
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: DodgerBlue;
+        }
+
+        .flex-container > article {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+    
+        .hideme {
+            color: white;
+        }
+    </style>
+    </head>
+    
+    <body>
+        <header id="header">       
+            <img src="https://tinyurl.com/y4me9g3w" id="header-img" alt="Bimini Travel icon" width="50" height="50">
+            <h1>Bimini Travel</h1>
+        
+            <nav id="nav-bar">
+                <a href="#cruises" class="nav-link">Cruises</a>
+                <a href="#resorts" class="nav-link">Resorts</a>
+                <a href="#vaction-packages" class="nav-link">Vacation Packages</a><br><br>
+            </nav>
+            <a href="#cruises" class="hideme">Jump to main content</a>
+
+        </header>
+
+        <main id="main">
+            
+            <h2 id="cruises">CRUISES</h2>
+            <img src="https://tinyurl.com/y4m6lpd9" alt="cruise ship" width="1000"><br><br>
+            
+            <section class="flex-container">
+                <article>Cruises</article>
+                <article>Resorts</article>
+                <article>Vacation Pacakges</article>  
+            </section>
+
+            <video id="video" width="500" controls>
+                <source src="https://youtu.be/RVdUULOv27c" type="video/mp4">
+                Your browser does not support the video tag.
+            </video><br><br>
+            
+            <form action="/action_page.php" id="form">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter e-mail" name="email"><br><br>
+                <input type="submit" id="submit" value="Submit" aria-label="Submit"><br><br>    
+            </form>
+            
+            <h2 id="resorts">RESORTS</h2>
+            <img src="https://tinyurl.com/y54gw353" alt="resort" width="1000"><br><br>
+
+            <h2 id="vaction-packages">VACATION PACKAGES</h2>
+            <img src="https://tinyurl.com/y2uwfpq2" alt="vaction-packages" width="1000">
+
+        </main>
+    </body>
+</html>
